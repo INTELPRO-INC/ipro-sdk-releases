@@ -1,23 +1,15 @@
-# IPRO SDK Online Setup 3.4.0
+# IPRO SDK Online Setup 3.5.0
 
-Windows online installer and IPRO7 SDK Installation and Setup Guide, published together for customer download.
+同一支安裝程式持續取得 SDK 與工具更新，不必因套件內容改版而重新產生 EXE。
 
-## Assets
+- 每次線上安裝重新讀取工具套件清單，並自動辨識正式 SDK Release；目前可直接取得 SDK 2.0.1。
+- 工具依各自的 stable 指標更新；維護者透過套件管理中心發布新版並設為穩定版後，客戶再次執行同一支 EXE 即可取得。
+- 支援 SDK `.tar.gz` 與 ZIP，核對大小、SHA-256、目錄結構及 SDK 版本；保留指定舊版、下載快取與離線模式。
+- 完整安裝接入既有 Windows 舊 linker 相容處理，並記錄受影響預編譯庫；SDK-only 保留原始 SDK。
+- Windows x64 實測 SDK 2.0.1 下載、完整安裝及範例編譯；以本機模擬新版 SDK／工具驗證同一 EXE 無需重建。
 
-- **IPRO-SDK-Online-Setup-3.4.0.zip** — extract and run `IPRO-SDK-Online-Setup-3.4.0.exe`.
-- **IPRO7_ISG_V1.0_en.pdf** — English Installation and Setup Guide v1.0, dated 2026-09-09.
-- **SHA256SUMS.txt** — checksums for both downloads and the extracted EXE.
+下載 EXE 或 ZIP 後依 `SHA256SUMS.txt` 核對。首次安裝選 Full environment 與新目錄；需要切換 VS Code 時勾選設定切換工作。舊環境保留，更新不會在背景自動覆蓋既有目錄。
 
-For a first installation, select **Full environment**, use a new installation directory, and follow the ISG for optional settings, editor setup and a first example build. The installer downloads packages online; this ZIP is not an offline SDK bundle. Customer installation does not require GitHub authentication.
+詳見 `INSTALLATION.zh-TW.md`。安裝器未作 Authenticode 簽章；本版沒有新增 ARM64 實機或板上燒錄驗證。
 
-The installer supports full installation and six single-package modes. Package versions are resolved from the official catalog and are independent of installer version 3.4.0. See the ISG for pinned versions and explicit offline installation with a prepared cache.
-
-## Verification
-
-The ZIP has been checked for archive integrity. The extracted EXE is 2,112,492 bytes and its SHA-256 matches the value documented in the ISG:
-
-`00a391b8b92a1bb7177607d6527c1875a77e91500fe2c816d8816e72381cdd18`
-
-The EXE is not Authenticode signed. Refer to ISG sections 1.2 and 12 for verification guidance and tested scope. No new Windows installation or hardware acceptance testing was performed for this publication.
-
-See the [README](https://github.com/INTELPRO-INC/ipro-sdk-releases#readme) for download instructions and requirements.
+SDK 與工具仍取自 `INTELPRO-INC/IPRO-SDK`。此 Release 僅提供安裝包、校驗資訊與文件，不另行發布原始碼包。
