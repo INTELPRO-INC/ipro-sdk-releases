@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 3,
+  "owner": "INTELPRO-INC",
+  "catalog": "INTELPRO-INC/ipro-sdk-releases",
+  "revision": 1,
+  "minimumInstallerVersion": "3.7.0",
+  "updatedAt": "2026-11-04T09:08:59Z",
+  "repositories": {
+    "sdk": "IPRO-SDK",
+    "toolchain": "ipro-toolchain",
+    "tools": "ipro-build-tools",
+    "flash": "ipro-cube",
+    "openocd": "ipro-openocd",
+    "extension": "ipro-vscode-extension"
+  },
+  "packages": {
+    "sdk": {
+      "stable": "1.2.1",
+      "versions": {
+        "1.2.1": {
+          "id": "sdk",
+          "version": "1.2.1",
+          "file": "IPRO-SDK-1.2.1.zip",
+          "url": "https://github.com/INTELPRO-INC/IPRO-SDK/releases/download/v1.2.1/IPRO-SDK-1.2.1.zip",
+          "bytes": 81614828,
+          "sha256": "2e48f5c142c2828621caece43efc47dabe2fc4752f2d52b60f20e8c34415052e",
+          "root": "IPRO-SDK-1.2.1",
+          "destination": "sdk/IPRO-IPRO7-SDK-V1.2.1",
+          "markers": [
+            "CMakeLists.txt",
+            "apps",
+            "bsp"
+          ],
+          "requires": {
+            "toolchain": [
+              "13.1.1-20230713"
+            ],
+            "tools": [
+              "2026.09.09"
+            ],
+            "extension": [
+              "3.3.0"
+            ]
+          }
+        }
+      }
+    },
+    "toolchain": {
+      "stable": "14.2.1-20240816",
+      "versions": {
+        "14.2.1-20240816": {
+          "id": "toolchain",
+          "version": "14.2.1-20240816",
+          "file": "IPRO-toolchain-win32-14.2.1-20240816.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-toolchain/releases/download/v14.2.1-20240816/IPRO-toolchain-win32-14.2.1-20240816.zip",
+          "bytes": 428446154,
+          "sha256": "b6880d1144ff88b7137b831ee2d623217a7837917ba33409b65dcb66821a427a",
+          "root": "riscv_ipro7_win32",
+          "destination": "toolchain/riscv_ipro7",
+          "markers": [
+            "bin/riscv64-unknown-elf-gcc.exe"
+          ],
+          "requires": {}
+        },
+        "13.1.1-20230713": {
+          "id": "toolchain",
+          "version": "13.1.1-20230713",
+          "file": "IPRO-toolchain-win32-13.1.1-20230713.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-toolchain/releases/download/v13.1.1-20230713/IPRO-toolchain-win32-13.1.1-20230713.zip",
+          "bytes": 383928419,
+          "sha256": "3d37453878f1ca336ff76272fe254cc7357d28c3e0cdda77c7f3647e0b85b286",
+          "root": "riscv_ipro7_win32",
+          "destination": "toolchain/riscv_ipro7_win32",
+          "markers": [
+            "bin/riscv64-unknown-elf-gcc.exe"
+          ],
+          "requires": {}
+        }
+      }
+    },
+    "tools": {
+      "stable": "2026.09.09",
+      "versions": {
+        "2026.09.09": {
+          "id": "tools",
+          "version": "2026.09.09",
+          "file": "IPRO-build-tools-windows-2026.09.09.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-build-tools/releases/download/v2026.09.09/IPRO-build-tools-windows-2026.09.09.zip",
+          "bytes": 55974017,
+          "sha256": "634962548effa5700b87bb0da898c8f3dc5524e99b871a330abddcd179a5b4ee",
+          "root": "tools",
+          "destination": "tools",
+          "markers": [
+            "cmake/bin/cmake.exe",
+            "ninja/ninja.exe",
+            "python/python.exe"
+          ],
+          "requires": {}
+        }
+      }
+    },
+    "flash": {
+      "stable": "0.7.0",
+      "versions": {
+        "0.7.0": {
+          "id": "flash",
+          "version": "0.7.0",
+          "file": "IntelProCube-0.7.0-windows.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-cube/releases/download/v0.7.0/IntelProCube-0.7.0-windows.zip",
+          "bytes": 182261793,
+          "sha256": "29c55ca8c1469433d4c06b344091a2e747a1bf39c7b7123067cf6dc0ddcfa4e0",
+          "root": "IntelProCube",
+          "destination": "IntelProCube",
+          "markers": [
+            "docs"
+          ],
+          "requires": {}
+        }
+      }
+    },
+    "openocd": {
+      "stable": "2024.06",
+      "versions": {
+        "2024.06": {
+          "id": "openocd",
+          "version": "2024.06",
+          "file": "IntelPro-OpenOCD-windows-2024.06.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-openocd/releases/download/v2024.06/IntelPro-OpenOCD-windows-2024.06.zip",
+          "bytes": 7294433,
+          "sha256": "947c1297c364ca9a30f43fd46aed69da5854e5944f73d84f7fd5bcdbb9add18f",
+          "root": "openocd",
+          "destination": "openocd",
+          "markers": [
+            "win64/bin/openocd.exe"
+          ],
+          "requires": {}
+        }
+      }
+    },
+    "extension": {
+      "stable": "3.3.0",
+      "versions": {
+        "3.3.0": {
+          "id": "extension",
+          "version": "3.3.0",
+          "file": "IPRO-extension-windows-3.3.0.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-vscode-extension/releases/download/v3.3.0/IPRO-extension-windows-3.3.0.zip",
+          "bytes": 3517130,
+          "sha256": "c7bcb2370dc9997cbd0aa0f565a0823e2a0c40868426e19245833e32b9252ef2",
+          "root": "extension",
+          "destination": "extension",
+          "markers": [
+            "ipro-sdk-extension-win32-x64-3.3.0.vsix",
+            "ipro-sdk-extension-win32-arm64-3.3.0.vsix"
+          ],
+          "requires": {}
+        }
+      }
+    }
+  }
+}
