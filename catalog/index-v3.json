@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "owner": "INTELPRO-INC",
   "catalog": "INTELPRO-INC/ipro-sdk-releases",
-  "revision": 1,
+  "revision": 2,
   "minimumInstallerVersion": "3.7.0",
-  "updatedAt": "2026-11-04T09:08:59Z",
+  "updatedAt": "2026-11-10T04:33:22Z",
   "repositories": {
     "sdk": "IPRO-SDK",
     "toolchain": "ipro-toolchain",
@@ -100,7 +100,7 @@
       }
     },
     "flash": {
-      "stable": "0.7.0",
+      "stable": "0.7.0.1",
       "versions": {
         "0.7.0": {
           "id": "flash",
@@ -109,6 +109,20 @@
           "url": "https://github.com/INTELPRO-INC/ipro-cube/releases/download/v0.7.0/IntelProCube-0.7.0-windows.zip",
           "bytes": 182261793,
           "sha256": "29c55ca8c1469433d4c06b344091a2e747a1bf39c7b7123067cf6dc0ddcfa4e0",
+          "root": "IntelProCube",
+          "destination": "IntelProCube",
+          "markers": [
+            "docs"
+          ],
+          "requires": {}
+        },
+        "0.7.0.1": {
+          "id": "flash",
+          "version": "0.7.0.1",
+          "file": "IntelProCube-0.7.0.1-windows.zip",
+          "url": "https://github.com/INTELPRO-INC/ipro-cube/releases/download/v0.7.0.1/IntelProCube-0.7.0.1-windows.zip",
+          "bytes": 182262105,
+          "sha256": "4b4b981705e834af8c738dd92b9b671aa3559e09ae4001289dd58aed23a4d353",
           "root": "IntelProCube",
           "destination": "IntelProCube",
           "markers": [
